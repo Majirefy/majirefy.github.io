@@ -1,15 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love</title>
-    <link rel="stylesheet" href="emoji-rain.css">
-
-</head>
 <body>
-    
-    <script src="emoji-rain.js"></script>
+<div style="position: absolute; top: 50px; left: 50px;">
+<canvas id="canvas" width="500" height="500">
+ Your browser does not support the HTML 5 Canvas. 
+</canvas>
+<script type="text/javascript">
+  let theCanvas = document.getElementById('canvas');
+    let context = theCanvas.getContext('2d');
+
+         
+                  // Heart 
+         context.fillStyle = "red"; 
+         context.beginPath(); 
+          context.moveTo(75, 250); 
+          context.bezierCurveTo(75, 247, 70, 235, 50, 235); 
+          context.bezierCurveTo(20, 235, 20, 272.5, 20, 272); 
+          context.bezierCurveTo(20, 290, 40, 312, 75, 330); 
+          context.bezierCurveTo(110, 312, 130, 290, 130, 272); 
+          context.bezierCurveTo(130, 272.5, 130, 235, 100, 235); 
+          context.bezierCurveTo(85, 235, 75, 247, 75, 250); 
+          context.closePath(); 
+          context.fill();   context.stroke(); 
+
+  
+</script> 
+
+</div>
 </body>
 </html>
