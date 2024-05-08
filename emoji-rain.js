@@ -16,4 +16,4 @@ function createRain() {
     }, 5000);
 }
 
-setInterval(createrain,300);
+setInterval(createRain,300);
